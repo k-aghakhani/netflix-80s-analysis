@@ -30,7 +30,5 @@ for label, row in action_movies_1990s.iterrows():
     if row["duration"] < 90:
         short_movie_count += 1
 
-# Alternative quicker way: short_movie_count = (action_movies_1990s["duration"] < 90).sum()
-
 # Print the count for verification (should be 7 based on the dataset)
 print(short_movie_count)
